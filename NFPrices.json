@@ -1,0 +1,16 @@
+{
+    "price": {
+        "Agentina": [279, 459, 669, "ARS"],
+        "Brazil": [21.9, 32.9, 45.9, "BRL"],
+        "Hong Kong": [63, 78, 93, "HKD"],
+        "Japan": [800, 1200, 1800, "JPY"],
+        "Pakistan": [950, 1200, 1500, "PKR"],
+        "Taiwan": [279, 459, 669, "ARS"],
+        "Turkey": [26.99, 40.99, 54.99, "TRY"],
+        "United States": [8.99, 13.99, 17.99, "USD"]
+    },
+    "tax": {
+        "Agentina": 1.64
+    },
+    "updated": "2021-03-29"
+}

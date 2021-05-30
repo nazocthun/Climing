@@ -1,0 +1,5 @@
+# > OneDrive
+USER-AGENT,OneDrive*,OneDrive
+USER-AGENT,OneDriveiOSApp*,OneDrive
+DOMAIN-SUFFIX,sharepoint.com,OneDrive
+DOMAIN-SUFFIX,sharepointonline.com,OneDrive
