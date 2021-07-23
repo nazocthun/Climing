@@ -1,0 +1,9 @@
+#!name= AQI-US-iOS14
+#!desc= 将iOS14天气APP中AQI标准改为US标准(更严格)
+#!system=ios
+
+[Script]
+http-response https://weather-data.apple.com/v1/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\? requires-body=1,script-path=https://raw.githubusercontent.com/nazocthun/Climing/master/Surge/Scripts/iOS14_Weather_AQI_US.js
+
+[MITM]
+hostname = %APPEND% weather-data.apple.com
