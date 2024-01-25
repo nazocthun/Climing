@@ -1,0 +1,10 @@
+#!name=机场信息
+#!desc=显示机场剩余流量与到期日期
+#!category=Panels
+#!arguments=标题, 订阅链接, 流量重置日, 图标:airplane.circle, 图标颜色:#007aff, method:head
+#!arguments-desc=流量重置日：填写成流量每月重置的日期，如1号就填1，8号就填8。\n图标：内容为任意有效的 SF Symbol Name。\n图标颜色：颜色的 HEX 编码。如 #007aff。\nmethod：有些服务端不支持head访问，如果默认无效请成get。
+
+[Script]
+sub-info = script-name=sub-info, update-interval = 43200
+[Panel]
+sub-info = type=generic, timeout=10, script-path=sub_info_panel.js, script-update-interval=0, argument=url={{{订阅链接}}}&{{{流量重置日}}}&title={{{标题}}}&icon={{{图标}}}&color={{{图标颜色}}}&method{{{method}}}
