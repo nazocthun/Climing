@@ -1,0 +1,11 @@
+#!name=机场信息2
+#!desc=显示机场剩余流量与到期日期
+#!system=ios
+#!category=Panels
+#!arguments=title: Airport, url: https%3A%2F%2Ftest.url, reset_day: 0, icon: airplane.circle, color: #007aff, method:head
+#!arguments-desc=title: panel显示标题\nurl: URIencode后的机场订阅链接\nreset_day: 重置日，0为不重置\nicon: 有效的 SF Symbol Name\ncolor: 颜色HEX代码，如 #007aff\nmethod：有些服务端不支持head访问，如果默认无效请成get
+
+[Script]
+sub-info-2 = script-name=sub-info-2, update-interval = 43200
+[Panel]
+sub-info-2 = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js, script-update-interval=0, argument=url={{{订阅链接}}}&reset_day={{{流量重置日}}}&title={{{标题}}}&icon={{{图标}}}&color={{{图标颜色}}}&method={{{method}}}
