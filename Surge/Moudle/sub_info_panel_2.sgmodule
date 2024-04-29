@@ -8,4 +8,4 @@
 [Script]
 sub-info-2 = script-name=sub-info-2, update-interval = 43200
 [Panel]
-sub-info-2 = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js, script-update-interval=0, argument=url={{{订阅链接}}}&reset_day={{{流量重置日}}}&title={{{标题}}}&icon={{{图标}}}&color={{{图标颜色}}}&method={{{method}}}
+sub-info-2 = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js, argument=url={{{url}}}&reset_day={{{reset_day}}}&title={{{title}}}&icon={{{icon}}}&color={{{color}}}&method={{{method}}}
