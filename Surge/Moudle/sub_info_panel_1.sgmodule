@@ -5,7 +5,7 @@
 #!arguments=title: Airport, url: https%3A%2F%2Ftest.url, reset_day: 0, icon: airplane.circle, color: #007aff, method:head
 #!arguments-desc=title: panel显示标题\nurl: URIencode后的机场订阅链接\nreset_day: 重置日，0为不重置\nicon: 有效的 SF Symbol Name\ncolor: 颜色HEX代码，如 #007aff\nmethod：有些服务端不支持head访问，如果默认无效请成get
 
-[Script]
-sub-info-1 = script-name=sub-info-1, update-interval = 43200
 [Panel]
+sub-info-1 = script-name=sub-info-1, update-interval = 43200
+[Script]
 sub-info-1 = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js, script-update-interval=0, argument=url={{{url}}}&reset_day={{{reset_day}}}&title={{{title}}}&icon={{{icon}}}&color={{{color}}}&method={{{method}}}
